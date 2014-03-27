@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="Inserted setPort command and added json and jsoup dependencies to Maven so that we don't have to add the jar libraries separately. &#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_7_3.xml" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\java_json.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\jsoup_1_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\src\main\java\main.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PiperServer.iml" afterPath="$PROJECT_DIR$/PiperServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PiperServer.java" afterPath="$PROJECT_DIR$/src/main/java/PiperServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PiperServer.iws" />
@@ -85,7 +78,7 @@
       <file leaf-file-name="PiperServer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/PiperServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.2289916" vertical-offset="143" max-vertical-offset="884">
+            <state line="25" column="21" selection-start="537" selection-end="537" vertical-scroll-proportion="0.52100843" vertical-offset="143" max-vertical-offset="884">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -540,17 +533,21 @@
       <workItem from="1395681978137" duration="60000" />
       <workItem from="1395682131484" duration="1238000" />
       <workItem from="1395789576333" duration="1595000" />
-      <workItem from="1395893831464" duration="1425000" />
+      <workItem from="1395893831464" duration="1503000" />
     </task>
     <task id="LOCAL-00001" summary="Added server classes from old repository, added gitignore file&#10;">
       <created>1395160307584</created>
       <updated>1395160307584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inserted setPort command and added json and jsoup dependencies to Maven so that we don't have to add the jar libraries separately. &#10;">
+      <created>1395898141333</created>
+      <updated>1395898141333</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8795000" />
+    <option name="totallyTimeSpent" value="8873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -820,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PiperServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.2289916" vertical-offset="143" max-vertical-offset="884">
+        <state line="25" column="21" selection-start="537" selection-end="537" vertical-scroll-proportion="0.52100843" vertical-offset="143" max-vertical-offset="884">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
