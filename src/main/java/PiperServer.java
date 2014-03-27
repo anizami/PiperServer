@@ -20,6 +20,7 @@ public class PiperServer {
     private PiperParser piperParser = new PiperParser();
 
     public static void main(String[] args) {
+        setPort(Integer.parseInt(System.getenv("PORT")));
 
         get(new Route("/") {
             @Override
