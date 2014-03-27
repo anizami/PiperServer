@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\Maven__commons_io_commons_io_1_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\Maven__log4j_log4j_1_2_14.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\Maven__org_eclipse_jetty_aggregate_jetty_webapp_7_3_0_v20110203.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asra Nizami\IdeaProjects\PiperServer\.idea\libraries\Maven__spark_spark_0_9_9_3_SNAPSHOT.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PiperServer.iml" afterPath="$PROJECT_DIR$/PiperServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PiperServer.iws" />
@@ -542,7 +533,7 @@
       <workItem from="1395681978137" duration="60000" />
       <workItem from="1395682131484" duration="1238000" />
       <workItem from="1395789576333" duration="1595000" />
-      <workItem from="1395893831464" duration="3781000" />
+      <workItem from="1395893831464" duration="4019000" />
     </task>
     <task id="LOCAL-00001" summary="Added server classes from old repository, added gitignore file&#10;">
       <created>1395160307584</created>
@@ -556,7 +547,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11151000" />
+    <option name="totallyTimeSpent" value="11389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
