@@ -18,7 +18,7 @@ public class PiperServer {
     public static void main(String[] args) {
         setPort(Integer.parseInt(System.getenv("PORT")));
 
-        get(new Route("/") {
+        get(new Route("/getPiper") {
             @Override
             public Object handle(Request request, Response response) {
                 PiperParser.parseThroughPiper();
