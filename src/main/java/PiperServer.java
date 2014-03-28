@@ -3,17 +3,13 @@
  */
 
 import static spark.Spark.*;
+import spark.*;
 import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import spark.Request;
-import spark.Response;
-import spark.Route;
 
 public class PiperServer {
-
-    private PiperParser piperParser = new PiperParser();
 
     public static void main(String[] args) {
         setPort(Integer.parseInt(System.getenv("PORT")));
