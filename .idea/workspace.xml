@@ -69,7 +69,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.25274727" vertical-offset="463" max-vertical-offset="1003">
+            <state line="31" column="14" selection-start="1105" selection-end="1105" vertical-scroll-proportion="-0.046153847" vertical-offset="548" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -535,7 +535,7 @@
       <workItem from="1395789576333" duration="1595000" />
       <workItem from="1395893831464" duration="5572000" />
       <workItem from="1395928648625" duration="629000" />
-      <workItem from="1396027677750" duration="3745000" />
+      <workItem from="1396027677750" duration="4060000" />
     </task>
     <task id="LOCAL-00001" summary="Added server classes from old repository, added gitignore file&#10;">
       <created>1395160307584</created>
@@ -553,11 +553,15 @@
       <created>1396046492836</created>
       <updated>1396046492836</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated pom file to include build plugins&#10;">
+      <created>1396046506084</created>
+      <updated>1396046506084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17316000" />
+    <option name="totallyTimeSpent" value="17631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -879,7 +883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.25274727" vertical-offset="463" max-vertical-offset="1003">
+        <state line="31" column="14" selection-start="1105" selection-end="1105" vertical-scroll-proportion="-0.046153847" vertical-offset="548" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
