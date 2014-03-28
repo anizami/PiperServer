@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PiperServer.iws" />
@@ -536,7 +535,7 @@
       <workItem from="1395789576333" duration="1595000" />
       <workItem from="1395893831464" duration="5572000" />
       <workItem from="1395928648625" duration="629000" />
-      <workItem from="1396027677750" duration="3677000" />
+      <workItem from="1396027677750" duration="3727000" />
     </task>
     <task id="LOCAL-00001" summary="Added server classes from old repository, added gitignore file&#10;">
       <created>1395160307584</created>
@@ -554,7 +553,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17248000" />
+    <option name="totallyTimeSpent" value="17298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
