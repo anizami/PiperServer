@@ -11,7 +11,7 @@ import org.jsoup.nodes.Document;
 public class PiperParser {
 
     private static EventUtility s = new EventUtility();
-    private static List<String> finalEventsList = new ArrayList<String>();
+    private static List<PiperEvent> finalEventsList = new ArrayList<PiperEvent>();
 
 
     public static void parseThroughPiper() {
@@ -38,14 +38,19 @@ public class PiperParser {
         }
         for (String event : eventList){
 
-            System.out.println("-----------------NEW STORY!-----------------");
+//            System.out.println("-----------------NEW STORY!-----------------");
             String cleanedUpEvent = s.cleanup(event);
-            System.out.println(cleanedUpEvent);
-            finalEventsList.add(cleanedUpEvent);
+//            System.out.println(cleanedUpEvent);
+            PiperEvent piperEvent = new PiperEvent();
+            piperEvent.setTime("Unavailable");
+            piperEvent.setLocation("Unavailable");
+            piperEvent.setDescription(cleanedUpEvent);
+            piperEvent.setTitle("Title");
+            finalEventsList.add(piperEvent);
         }
     }
 
-    public static List<String> getEventsList() {
+    public static List<PiperEvent> getEventsList() {
         return finalEventsList;
     }
 

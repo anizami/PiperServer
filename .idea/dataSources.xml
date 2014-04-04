@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3443957957">
+    <data-source source="LOCAL" name="PiperDatabase" uuid="70ac4299-564e-4447-a061-d32b1056eb64">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-197-241-67.compute-1.amazonaws.com:5432/d97b066u8qhf85?user=yjimyhvkjbslzc&amp;password=8I7R49OF3mHPhwO7OB8nkwhw_P&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</jdbc-url>
+      <user-name>yjimyhvkjbslzc</user-name>
+      <user-password>df92dfe3df9ddff8df9edf93dfe5dfecdf99dfc7dfe2dffadfc2dfdddfe5df9ddfe5dfe8df92dfc4dfc1dfdddfc2dfdddff5dffa</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="791aa396-b8a5-41b7-98ef-f8a8cd4a1579">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost/jokes</jdbc-url>
+      <user-name>yjimyhvkjbslzc</user-name>
+      <user-password>df92dfe3df9ddff8df9edf93dfe5dfecdf99dfc7dfe2dffadfc2dfdddfe5df9ddfe5dfe8df92dfc4dfc1dfdddfc2dfdddff5dffa</user-password>
+      <libraries>
+        <library>
+          <url>file://C:\Users\Asra Nizami\.m2\repository\org\postgresql\postgresql\9.3-1101-jdbc41\postgresql-9.3-1101-jdbc41.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
