@@ -2,14 +2,12 @@
  * Created by Asra Nizami on 4/3/14.
  */
 
-import com.sun.xml.internal.bind.v2.TODO;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-import javax.print.Doc;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.EventListener;
 import java.util.EventListener;
 import java.util.LinkedList;
 import java.util.List;
