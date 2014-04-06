@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="" />
     <ignored path="PiperServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -346,7 +344,7 @@
       <module name="PiperServer" />
       <envs>
         <env name="PORT" value="5000" />
-        <env name="DATABASE_URL" value="postgresql://ec2-54-197-241-67.compute-1.amazonaws.com:5432/d97b066u8qhf85?user=yjimyhvkjbslzc&amp;password=8I7R49OF3mHPhwO7OB8nkwhw_P&amp;ssl=true" />
+        <env name="DATABASE_URL" value="postgres://yjimyhvkjbslzc:8I7R49OF3mHPhwO7OB8nkwhw_P @ec2-54-197-241-67.compute-1.amazonaws.com:5432/d97b066u8qhf85" />
       </envs>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -543,7 +541,6 @@
       <module name="" />
       <envs>
         <env name="PORT" value="5000" />
-        <env name="DATABASE_URL" value="postgresql://ec2-54-197-241-67.compute-1.amazonaws.com:5432/d97b066u8qhf85?user=yjimyhvkjbslzc&amp;password=8I7R49OF3mHPhwO7OB8nkwhw_P&amp;ssl=true" />
       </envs>
       <method />
     </configuration>
@@ -620,7 +617,7 @@
       <workItem from="1395928648625" duration="629000" />
       <workItem from="1396027677750" duration="51144000" />
       <workItem from="1396596787859" duration="699000" />
-      <workItem from="1396649637930" duration="10085000" />
+      <workItem from="1396649637930" duration="10330000" />
     </task>
     <task id="LOCAL-00001" summary="Added server classes from old repository, added gitignore file&#10;">
       <created>1395160307584</created>
@@ -658,7 +655,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75499000" />
+    <option name="totallyTimeSpent" value="75744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
