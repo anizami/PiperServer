@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="Added code for DATABASE_URL&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="abe19b88-5cba-48eb-bcb4-e8ae9dc30873" name="Default" comment="" />
     <ignored path="PiperServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,16 +67,16 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1615">
+            <state line="81" column="69" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.0" vertical-offset="1183" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PiperServer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PiperServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PiperServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="49" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.787037" vertical-offset="1802" max-vertical-offset="2346">
+            <state line="128" column="49" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="2346">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#985#1151#0" expanded="true" />
@@ -108,16 +106,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSoupParse.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JSoupParse.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/JSoupParse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="0" selection-start="4772" selection-end="4772" vertical-scroll-proportion="-2.04" vertical-offset="2397" max-vertical-offset="2958">
+            <state line="10" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.34517765" vertical-offset="0" max-vertical-offset="2924">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#463#473#0" expanded="true" />
-                <element signature="e#541#551#0" expanded="true" />
-                <element signature="e#624#636#0" expanded="true" />
-                <element signature="e#2851#2859#0" expanded="true" />
+                <element signature="e#395#405#0" expanded="true" />
+                <element signature="e#473#483#0" expanded="true" />
+                <element signature="e#556#568#0" expanded="true" />
+                <element signature="e#2783#2791#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,8 +168,8 @@
         <option value="$PROJECT_DIR$/src/main/java/PiperEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/BadEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/PiperParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JSoupParse.java" />
         <option value="$PROJECT_DIR$/src/main/java/PiperServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JSoupParse.java" />
       </list>
     </option>
   </component>
@@ -620,7 +617,7 @@
       <workItem from="1395928648625" duration="629000" />
       <workItem from="1396027677750" duration="51144000" />
       <workItem from="1396596787859" duration="699000" />
-      <workItem from="1396649637930" duration="9158000" />
+      <workItem from="1396649637930" duration="9531000" />
     </task>
     <task id="LOCAL-00001" summary="Added server classes from old repository, added gitignore file&#10;">
       <created>1395160307584</created>
@@ -650,11 +647,15 @@
       <created>1396816565158</created>
       <updated>1396816565158</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Removed unused imports&#10;">
+      <created>1396816969730</created>
+      <updated>1396816969730</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74572000" />
+    <option name="totallyTimeSpent" value="74945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -710,7 +711,8 @@
     <MESSAGE value="updated pom file to include build plugins&#10;" />
     <MESSAGE value="Server with hibernate and postgres" />
     <MESSAGE value="Added code for DATABASE_URL&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code for DATABASE_URL&#10;" />
+    <MESSAGE value="Removed unused imports&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused imports&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -765,11 +767,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="31" selection-start="5479" selection-end="5479" vertical-scroll-proportion="0.0" vertical-offset="2197" max-vertical-offset="2941">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#463#473#0" expanded="true" />
-            <element signature="e#541#551#0" expanded="true" />
-            <element signature="e#624#636#0" expanded="true" />
-            <element signature="e#2851#2859#0" expanded="true" />
+            <element signature="e#395#405#0" expanded="true" />
+            <element signature="e#473#483#0" expanded="true" />
+            <element signature="e#556#568#0" expanded="true" />
+            <element signature="e#2783#2791#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1087,13 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="1138" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BadEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="34" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="969">
@@ -1115,28 +1109,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JSoupParse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="0" selection-start="4772" selection-end="4772" vertical-scroll-proportion="-2.04" vertical-offset="2397" max-vertical-offset="2958">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#463#473#0" expanded="true" />
-            <element signature="e#541#551#0" expanded="true" />
-            <element signature="e#624#636#0" expanded="true" />
-            <element signature="e#2851#2859#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PiperServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="49" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.787037" vertical-offset="1802" max-vertical-offset="2346">
+        <state line="128" column="49" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="2346">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#985#1151#0" expanded="true" />
             <element signature="e#1140#1141#0" expanded="true" />
             <element signature="e#2608#2624#0" expanded="true" />
             <element signature="e#3784#3800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="69" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.0" vertical-offset="1183" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JSoupParse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.34517765" vertical-offset="0" max-vertical-offset="2924">
+          <folding>
+            <element signature="e#395#405#0" expanded="true" />
+            <element signature="e#473#483#0" expanded="true" />
+            <element signature="e#556#568#0" expanded="true" />
+            <element signature="e#2783#2791#0" expanded="true" />
           </folding>
         </state>
       </provider>
