@@ -3,6 +3,8 @@
  */
 
 import static spark.Spark.*;
+
+import org.hibernate.Query;
 import spark.*;
 
 import java.awt.*;
@@ -18,10 +20,12 @@ import spark.Filter;
 import spark.Request;
 import spark.Response;
 import spark.Route;
+import java.util.Calendar;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.sql.Time;
+import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -45,6 +49,14 @@ public class PiperServer {
             @Override
             public Object handle(Request request, Response response) {
                 Session session = sessionFactory.openSession();
+                Calendar c = Calendar.getInstance();
+                int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+                System.out.println("The day of the week is " + dayOfWeek);
+
+                // Let's add code to delete all items from the database first
+                String stringquery = "DELETE FROM PiperEvent";
+                Query query = session.createQuery(stringquery);
+                query.executeUpdate();
 
 
 //                if (session.createQuery("from PiperEvent").list().isEmpty()){
@@ -112,6 +124,8 @@ public class PiperServer {
 
     private static SessionFactory createSessionFactory() {
         Configuration configuration = new Configuration().configure();
+        if(System.getenv("DATABASE_URL") != null)
+            configuration.setProperty("hibernate.connection.url", System.getenv("DATABASE_URL"));
         return configuration.buildSessionFactory(
                 new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties())
