@@ -143,12 +143,12 @@ public class JSoupParse {
                 String place = event.getPlace();
                 foodEventList.add(event);
 
-                System.out.println("-------------------------------");
-                System.out.println("TITLE: " + title + "\n");
-                System.out.println("DESCRIPTION: " + description + "\n");
-                System.out.println("TIME: " + time + "\n");
-                System.out.println("PLACE: " + place + "\n");
-
+//                System.out.println("-------------------------------");
+//                System.out.println("TITLE: " + title + "\n");
+//                System.out.println("DESCRIPTION: " + description + "\n");
+//                System.out.println("TIME: " + time + "\n");
+//                System.out.println("PLACE: " + place + "\n");
+//
 
             }
         }
