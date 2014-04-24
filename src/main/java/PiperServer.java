@@ -44,30 +44,9 @@ public class PiperServer {
             @Override
             public Object handle(Request request, Response response) {
                 Session session = sessionFactory.openSession();
-
-                // Let's add code to delete all items from the database first
-                String stringquery = "DELETE FROM PiperEvent";
-                Query query = session.createQuery(stringquery);
-                query.executeUpdate();
-
-
-                    List<PiperEvent> eventsList = JSoupParse.grabAndParse();
-                    for (PiperEvent event: eventsList) {
-                        Transaction tx = session.beginTransaction();
-                        try{
-                            session.save(event);
-                            tx.commit();
-                        }
-                        catch (Exception e) {
-                            tx.rollback();
-                            response.status(500);
-                            Map<String,Object> resBody = new HashMap<String, Object>();
-                            resBody.put("success", false);
-                            resBody.put("error", e.getLocalizedMessage());
-                            return new Gson().toJson(resBody);
-                        }
-                    }
-//                }
+//                String stringquery = "DELETE FROM PiperEvent";
+//                Query query = session.createQuery(stringquery);
+//                query.executeUpdate();
                 return new Gson().toJson(
                         session.createQuery("from PiperEvent").list());
 
