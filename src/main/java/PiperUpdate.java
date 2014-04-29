@@ -38,7 +38,7 @@ public class PiperUpdate {
                         .build());
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         final SessionFactory sessionFactory = createSessionFactory();
         Session session = sessionFactory.openSession();
 
@@ -55,11 +55,6 @@ public class PiperUpdate {
             }
             catch (Exception e) {
                 tx.rollback();
-//                response.status(500);
-//                Map<String,Object> resBody = new HashMap<String, Object>();
-//                resBody.put("success", false);
-//                resBody.put("error", e.getLocalizedMessage());
-//                return new Gson().toJson(resBody);
             }
         }
       }
