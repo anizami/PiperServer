@@ -4,6 +4,8 @@
 
 import static spark.Spark.*;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import org.hibernate.Query;
 import spark.*;
 
@@ -44,11 +46,15 @@ public class PiperServer {
             @Override
             public Object handle(Request request, Response response) {
                 Session session = sessionFactory.openSession();
-//                String stringquery = "DELETE FROM PiperEvent";
-//                Query query = session.createQuery(stringquery);
-//                query.executeUpdate();
-                return new Gson().toJson(
+                String jsonString =  new Gson().toJson(
                         session.createQuery("from PiperEvent").list());
+                Map<String,Object> resBody = new HashMap<String, Object>();
+                resBody.put("success", true);
+                resBody.put("PiperEvents", jsonString );
+                return new Gson().toJson(resBody);
+//
+//                return new Gson().toJson(
+//                        session.createQuery("from PiperEvent").list());
 
             }
         });
