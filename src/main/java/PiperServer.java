@@ -46,15 +46,8 @@ public class PiperServer {
             @Override
             public Object handle(Request request, Response response) {
                 Session session = sessionFactory.openSession();
-                String jsonString =  new Gson().toJson(
+                return new Gson().toJson(
                         session.createQuery("from PiperEvent").list());
-                Map<String,Object> resBody = new HashMap<String, Object>();
-                resBody.put("success", true);
-                resBody.put("PiperEvents", jsonString );
-                return new Gson().toJson(resBody);
-//
-//                return new Gson().toJson(
-//                        session.createQuery("from PiperEvent").list());
 
             }
         });

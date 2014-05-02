@@ -51,7 +51,7 @@ public class PiperUpdate {
         Calendar c = Calendar.getInstance();
         int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
         System.out.println("The day of the week is " + dayOfWeek);
-        if (dayOfWeek == 0 || dayOfWeek == 7) {
+        if (dayOfWeek != 0 || dayOfWeek != 7) {
             List<PiperEvent> eventsList = JSoupParse.grabAndParse();
             for (PiperEvent event: eventsList) {
                 Transaction tx = session.beginTransaction();
