@@ -42,29 +42,26 @@ public class PiperUpdate {
     public static void main(String[] args) {
         final SessionFactory sessionFactory = createSessionFactory();
         Session session = sessionFactory.openSession();
-
-        // Let's add code to delete all items from the database first
-//        Transaction tx = session.beginTransaction();
-        String stringquery = "DELETE FROM PiperEvent";
-        Query query = session.createQuery(stringquery);
+        Transaction tx = session.beginTransaction();
+        String stringQuery = "DELETE FROM PiperEvent";
+        Query query = session.createQuery(stringQuery);
         query.executeUpdate();
+        tx.commit();
         Calendar c = Calendar.getInstance();
         int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
         System.out.println("The day of the week is " + dayOfWeek);
-        if (dayOfWeek != 0 || dayOfWeek != 7) {
+        if (dayOfWeek != 1 && dayOfWeek != 7) {
             List<PiperEvent> eventsList = JSoupParse.grabAndParse();
             for (PiperEvent event: eventsList) {
-                Transaction tx = session.beginTransaction();
+                tx = session.beginTransaction();
                 try{
                     session.save(event);
                     tx.commit();
                 }
                 catch (Exception e) {
                     tx.rollback();
-
                 }
             }
         }
-//        tx.commit();
-      }
+    }
 }
