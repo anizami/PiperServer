@@ -60,12 +60,7 @@ public class JSoupParse {
             if (piperEvent.getDescription() != null){
                 piperEvents.add(piperEvent);
             }
-
         }
-
         return piperEvents;
-
     }
-
-
 }
