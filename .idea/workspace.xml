@@ -621,7 +621,7 @@
       <workItem from="1398828354727" duration="5047000" />
       <workItem from="1399061041412" duration="11793000" />
       <workItem from="1399395760303" duration="2213000" />
-      <workItem from="1399399112006" duration="95000" />
+      <workItem from="1399399112006" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="Added server classes from old repository, added gitignore file&#10;">
       <created>1395160307584</created>
@@ -667,7 +667,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114604000" />
+    <option name="totallyTimeSpent" value="115002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
