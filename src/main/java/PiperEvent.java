@@ -6,7 +6,6 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.sql.Time;
 
 @Entity
 public class PiperEvent {
@@ -24,9 +23,17 @@ public class PiperEvent {
 
     private String time;
 
-    private Time createdAt, updatedAt;
+    private String body;
 
     public PiperEvent() {
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body){
+        this.body= body;
     }
 
     public String getTitle() {
@@ -60,21 +67,5 @@ public class PiperEvent {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    public Time getCreatedAt() {
-        return createdAt;
-    }
-    public void setCreatedAt(Time createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Time getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Time updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
 
 }

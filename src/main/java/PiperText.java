@@ -6,7 +6,6 @@ public class PiperText {
     private String title = null;
     private String body = null;
 
-
     public void setTitle (String input){
         this.title = input;
     }
