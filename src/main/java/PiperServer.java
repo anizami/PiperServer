@@ -4,6 +4,7 @@
 
 import static spark.Spark.*;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -36,9 +37,10 @@ public class PiperServer {
             @Override
             public Object handle(Request request, Response response) {
                 Session session = sessionFactory.openSession();
-                return new Gson().toJson(
+                String jsonString = new Gson().toJson(
                         session.createQuery("from PiperEvent").list());
-
+                session.close();
+                return jsonString;
             }
         });
 
@@ -58,7 +60,9 @@ public class PiperServer {
                     Map<String,Object> resBody = new HashMap<String, Object>();
                     resBody.put("success", true);
                     resBody.put("PiperEvent", event);
-                    return new Gson().toJson(resBody);
+                    String jsonObject = new Gson().toJson(resBody);
+                    session.close();
+                    return jsonObject;
                 }
                 catch (Exception e) {
                     tx.rollback();
@@ -70,8 +74,9 @@ public class PiperServer {
                     Map<String,Object> resBody = new HashMap<String, Object>();
                     resBody.put("success", false);
                     resBody.put("error", e.getLocalizedMessage());
-                    return new Gson().toJson(resBody);
-
+                    String jsonObject = new Gson().toJson(resBody);
+                    session.close();
+                    return jsonObject;
                 }
             }
         }
