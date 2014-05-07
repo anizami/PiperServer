@@ -20,7 +20,7 @@ public class Utils {
     static String[] extractData(String input){
 
         // 0:description 1:place 2:time
-        String[] output = new String[3];
+        String[] output = new String[4];
 
 
         String sentenceEndRegex = ("(?<=[\\.\\!\\?]) (?=[A-Z0-9])");

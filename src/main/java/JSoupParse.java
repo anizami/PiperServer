@@ -28,31 +28,36 @@ public class JSoupParse {
         }
         piperTexts = new LinkedList<PiperText>();
         List<Element> fullElements = doc.select("div.story");
+        List<PiperEvent> OldPiperEvents = new LinkedList<PiperEvent>();
 
         for (Element element : fullElements){
 
-            PiperText piperText = new PiperText();
+//            PiperText piperText = new PiperText();
+            PiperEvent piperEvent = new PiperEvent();
 
             String title = element.select("h4").text();
             String body = element.children().not("h4").text();
 
+
             //TODO: deal with piperTexts w null bodies or titles!
-            piperText.setTitle(title);
-            piperText.setBody(body);
+            piperEvent.setTitle(title);
+            piperEvent.setBody(body);
+            OldPiperEvents.add(piperEvent);
 
-            piperTexts.add(piperText);
+//            piperText.setTitle(title);
+//            piperText.setBody(body);
+
+//            piperTexts.add(piperText);
         }
-
         List<PiperEvent> piperEvents = new LinkedList<PiperEvent>();
 
-
-        for (PiperText piperText:piperTexts ){
-            String title = piperText.getTitle();
-            String body = piperText.getBody();
+        for (PiperEvent piperEvent:OldPiperEvents ){
+//            String title = piperText.getTitle();
+            String body = piperEvent.getBody();
             String[] data = Utils.extractData(body);
-            PiperEvent piperEvent = new PiperEvent();
+//            PiperEvent piperEvent = new PiperEvent();
 
-            piperEvent.setTitle(title);
+//            piperEvent.setTitle(title);
             piperEvent.setDescription(data[0]);
             piperEvent.setLocation(data[1]);
             piperEvent.setTime(data[2]);

@@ -3,9 +3,12 @@
  */
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
+
 import javax.persistence.Entity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.xml.soap.Text;
 
 @Entity
 public class PiperEvent {
@@ -23,7 +26,12 @@ public class PiperEvent {
 
     private String time;
 
+//    @Column(columnDefinition="TEXT")
+//    private String body;
+
+    @Transient
     private String body;
+
 
     public PiperEvent() {
     }

@@ -48,5 +48,6 @@ public class PiperUpdate {
                 }
             }
         }
+        session.close();
     }
 }
