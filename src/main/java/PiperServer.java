@@ -17,6 +17,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PiperServer {
+    /*
+    Credits to http://www.taywils.me/2013/11/05/javasparkframeworktutorial.html for a Java with Spark tutorial
+    https://github.com/pcantrell/jokes-spark for a Hibernate tutorial and to
+    https://gist.github.com/Fitzsimmons/2490382 for deploying server on Heroku tutorial
+     */
 
     public static void main(String[] args) {
         setPort(Integer.parseInt(System.getenv("PORT")));
@@ -81,8 +86,6 @@ public class PiperServer {
 
     private static SessionFactory createSessionFactory() {
         Configuration configuration = new Configuration().configure();
-//        if(System.getenv("DATABASE_URL") != null)
-//            configuration.setProperty("hibernate.connection.url", System.getenv("DATABASE_URL"));
         return configuration.buildSessionFactory(
                 new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties())
