@@ -14,7 +14,6 @@ import org.hibernate.Transaction;
 public class PiperUpdate {
 
     private static SessionFactory createSessionFactory() {
-        //configure() uses the mappings and properties specified in an application resource named hibernate.cfg.xml
         Configuration configuration = new Configuration().configure();
 //        if(System.getenv("DATABASE_URL") != null)
 //            configuration.setProperty("hibernate.connection.url", System.getenv("DATABASE_URL"));
@@ -34,18 +33,16 @@ public class PiperUpdate {
         tx.commit();
         Calendar c = Calendar.getInstance();
         int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
-        System.out.println("The day of the week is " + dayOfWeek);
         if (dayOfWeek != 1 && dayOfWeek != 7) {
-            List<PiperEvent> eventsList = JSoupParse.grabAndParse();
+            List<PiperEvent> eventsList = PiperParser.grabAndParse();
+            tx = session.beginTransaction();
             for (PiperEvent event: eventsList) {
-                tx = session.beginTransaction();
-                try{
-                    session.save(event);
-                    tx.commit();
-                }
-                catch (Exception e) {
-                    tx.rollback();
-                }
+                session.save(event);
+            }
+            try {
+                tx.commit();
+            } catch (Exception e) {
+                tx.rollback();
             }
         }
         session.close();

@@ -4,7 +4,6 @@
 
 import static spark.Spark.*;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -17,13 +16,10 @@ import spark.Route;
 import java.util.HashMap;
 import java.util.Map;
 
-
-
 public class PiperServer {
 
     public static void main(String[] args) {
         setPort(Integer.parseInt(System.getenv("PORT")));
-
         final SessionFactory sessionFactory = createSessionFactory();
 
         before(new Filter() {
@@ -84,7 +80,6 @@ public class PiperServer {
     }
 
     private static SessionFactory createSessionFactory() {
-        //configure() uses the mappings and properties specified in an application resource named hibernate.cfg.xml
         Configuration configuration = new Configuration().configure();
 //        if(System.getenv("DATABASE_URL") != null)
 //            configuration.setProperty("hibernate.connection.url", System.getenv("DATABASE_URL"));
